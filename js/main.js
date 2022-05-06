@@ -1,5 +1,4 @@
 
-
 // Harry Potter Game
 
 // Character Class
@@ -137,7 +136,7 @@ function flip(e) {
   
   let attacker = e.target
   
-  if (attacker == document.getElementById("bellatrix")) {
+  /*if (attacker == document.getElementById("bellatrix")) {
     //
     direction = -1
     //document.getElementById('wand').style["transform"] = "rotateY(180deg)"
@@ -145,7 +144,7 @@ function flip(e) {
   else {
     direction = 1
     //document.getElementById('wand').style["transform"] = "rotate(0)"
-  }
+  }*/
   document.getElementById("wand").style["-webkit-transform"] = `scaleX(${direction})`;
   document.getElementById("wand").style["transform"] = `scaleX(${direction})`;
 }
@@ -155,6 +154,12 @@ function flip(e) {
 
 function fight(elem){
   let spell = elem.target
+  if (spell.classList.contains("harrySpell")) {
+    direction = -1
+  }
+  else if (spell.classList.contains("bellaSpell")) {
+    direction = 1
+  }
   if (spell == document.querySelector(".fa-feather")) {
     console.log("feather baby")
   }
@@ -173,4 +178,5 @@ function fight(elem){
   else if (spell == document.querySelector(".fa-skull")) {
     console.log("AVADA KADAVRA")
   }
+  flip(spell)
 }
