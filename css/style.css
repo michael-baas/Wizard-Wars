@@ -1,0 +1,58 @@
+/******************************************
+/* CSS
+/*******************************************/
+
+/* Box Model Hack */
+*{
+  box-sizing: border-box;
+}
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+img{
+  display: block;
+  margin: 0 auto;
+}
+
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
+img,
+video {
+  height: auto;
+  max-width: 100%;
+}
+
+
+main > div {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  
+}
+
+.wandDiv {
+   display: flex;
+  justify-content: center;
+}
+
+.characters{
+  border: 2px red solid;
+  justify-content: space-around;
+}
+#wand {
+  width: 25%;
+}
+
+section {
+  display: flex;
+
+}
+
+section > div {
+  border: 2px red solid;
+  height: 100px;
+  width: 100%;
+}
