@@ -19,6 +19,7 @@ img{
 /******************************************
 /* ADDITIONAL STYLES
 /*******************************************/
+/* images and videos max out at full width */
 img,
 video {
   height: auto;
@@ -37,7 +38,9 @@ main > div {
    display: flex;
   justify-content: center;
 }
-
+.fa-solid, .fa-brands {
+  font-size: 6rem;
+}
 .characters{
   border: 2px red solid;
   justify-content: space-around;
@@ -55,4 +58,12 @@ section > div {
   border: 2px red solid;
   height: 100px;
   width: 100%;
+}
+.fa-wand-sparkles {
+  font-size: 8rem;
+}
+#harry, #bellatrix {
+  border-radius: 35rem;
+  border: 15px lightgray solid;
+  
 }
